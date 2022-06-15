@@ -21,4 +21,6 @@ func main() {
 	amountOfApples := float64(amountMoney) / priceApple
 	fmt.Println("3. Скільки яблук ми можемо купити? :", "We can buy -", amountOfApples, "Apples")
 
+	sumAppelsAndPears := (priceApple*2)+(float64(pricePear)*2) <= float64(amountMoney)
+	fmt.Println("4. Чи ми можемо купити 2 груші та 2 яблука? :", sumAppelsAndPears, "-(We can't pay two apples and two pears)")
 }
